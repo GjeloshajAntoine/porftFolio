@@ -1,0 +1,39 @@
+nav{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.initiales{
+  display: inline;
+}
+span .nom{
+  display: inline-block;
+}
+.nom{
+  /* display:none; */
+  transform: scale(0,1);
+  width: 0px;
+  transition:width 1s,transform 1.2s;
+}
+/* .initiales:hover ~ .nom{
+  display: inline;
+} */
+.nom-show{
+  display: inline-block;
+  transform: scale(1,1);
+  transition:width 1s,transform 1.2s;
+  /* transition:  */
+  width:45.328px;
+  width:3em; 
+}
+.left-menu{
+  float: left;
+  font-family: 'Lilita One', cursive;
+  font-size: 2em;
+}
+.left-menu > * ,.nom-complet > *{ /* to delete space between words */
+  float: left;
+}
+.right-menu{
+  float: right;
+  /* margin-right: 5%; */
+}
