@@ -1,0 +1,85 @@
+body{
+  margin: 0px;
+}
+nav{
+  padding-left: 3%;
+  padding-right: 3%;
+  color: gray;
+}
+.initiales{
+  display: inline;
+}
+span .nom{
+  display: inline-block;
+}
+.nom{
+  /* display:none; */
+  transform: scale(0,1);
+  width: 0px;
+  transition:width 1s,transform 1.2s;
+}
+/* .initiales:hover ~ .nom{
+  display: inline;
+} */
+.nom-show{
+  display: inline-block;
+  transform: scale(1,1);
+  transition:width 1s,transform 1.2s;
+  /* transition:  */
+  width:45.328px;
+  width:3em; 
+}
+.left-menu{
+  float: left;
+  font-family: 'Lilita One', cursive;
+  font-size: 2em;
+}
+.left-menu > * ,.nom-complet > *{ /* to delete space between words */
+  float: left;
+}
+.right-menu{
+  float: right;
+  /* margin-right: 5%; */
+}
+section::before {
+  content: ' ';
+  width: 39%;
+  height: 57px;
+  position: absolute;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 68%;
+  margin-left: 29%;
+  margin-top: -44px;
+}
+section{
+  width: 100%;
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  margin-top: 10%;
+  background: linear-gradient(to right, rgb(0, 39, 108) 1%,rgba(107,156,196,1) 51%,rgb(114, 129, 148) 94%);
+  background: linear-gradient(to right, rgb(0, 39, 108) 1%,rgb(158, 14, 14) 51%,rgb(27, 34, 99) 94%);
+}
+section div:nth-child(1){
+  float:left;
+  width: 50%;
+  height: 345px;
+  background-size: cover;
+}
+section div:nth-child(2){
+  float: right;
+  width:50%;
+}
+section .img{
+  float: left;
+}
+section .description{
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+.description p{
+  padding: 10%;
+  padding-top: 0;
+}
