@@ -59,35 +59,57 @@ span .nom {
   /* margin-right: 5%; */
 }
 
-section::before {
+.inclined-left::before, .inclined-right::before {
   content: ' ';
-  width: 39%;
-  height: 57px;
+  width: 6%;
+  height: 380px;
   position: absolute;
   background-color: white;
   margin: 0 auto;
-  border-radius: 68%;
-  margin-left: 29%;
-  margin-top: -44px;
+  /* border-radius: 68%; */
+  margin-left: 42%;
+  margin-top: -22px;
+}
+
+.inclined-left::before {
+  -webkit-transform: rotateZ(7deg);
+          transform: rotateZ(7deg);
+}
+
+.inclined-right::before {
+  -webkit-transform: rotateZ(-7deg);
+          transform: rotateZ(-7deg);
 }
 
 section {
-  width: 100%;
+  width: 90%;
   display: inline-block;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 345px;
   background-color: #000000;
   color: white;
-  margin-top: 10%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #00276c), color-stop(51%, #6b9cc4), color-stop(94%, #728194));
-  background: linear-gradient(to right, #00276c 1%, #6b9cc4 51%, #728194 94%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #00276c), color-stop(51%, #9e0e0e), color-stop(94%, #1b2263));
-  background: linear-gradient(to right, #00276c 1%, #9e0e0e 51%, #1b2263 94%);
+}
+
+.blue {
+  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #00276c), color-stop(10%, #6b9cc4), color-stop(78%, #728194));
+  background: linear-gradient(to left, #00276c 1%, #6b9cc4 10%, #728194 78%);
+}
+
+.red {
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #11064e), color-stop(9%, #1b2263), color-stop(98%, #9E0E0D));
+  background: linear-gradient(to right, #11064e 5%, #1b2263 9%, #9E0E0D 98%);
+}
+
+.description {
+  height: 345px;
+  line-height: 30px;
 }
 
 section div:nth-child(1) {
   float: left;
   width: 50%;
-  height: 345px;
-  background-size: cover;
 }
 
 section div:nth-child(2) {
@@ -97,6 +119,8 @@ section div:nth-child(2) {
 
 section .img {
   float: left;
+  height: 100%;
+  background-size: cover;
 }
 
 section .description {
@@ -107,6 +131,6 @@ section .description {
 
 .description p {
   padding: 10%;
-  padding-top: 0;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=nav.css.map */
