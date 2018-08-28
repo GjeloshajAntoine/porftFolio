@@ -127,6 +127,7 @@ section .description {
   width: 50%;
   float: right;
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .description p {
