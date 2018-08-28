@@ -41,31 +41,56 @@ span .nom{
   float: right;
   /* margin-right: 5%; */
 }
-section::before {
+$sect-heigh:345px;
+
+%inclined{
   content: ' ';
-  width: 39%;
-  height: 57px;
+  width: 6%;
+  height: 380px;
   position: absolute;
   background-color: white;
   margin: 0 auto;
-  border-radius: 68%;
-  margin-left: 29%;
-  margin-top: -44px;
+  /* border-radius: 68%; */
+  margin-left: 42%;
+  margin-top: -22px;
+  // transform: rotateZ(7deg);
+
+}
+.inclined-left::before{
+  @extend %inclined;
+  transform: rotateZ(7deg);
+}
+.inclined-right::before{
+  @extend %inclined;
+  transform: rotateZ(-7deg);
 }
 section{
-  width: 100%;
+  width: 90%;
   display: inline-block;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height:$sect-heigh;
+
   background-color: #000000;
   color: white;
-  margin-top: 10%;
-  background: linear-gradient(to right, rgb(0, 39, 108) 1%,rgba(107,156,196,1) 51%,rgb(114, 129, 148) 94%);
-  background: linear-gradient(to right, rgb(0, 39, 108) 1%,rgb(158, 14, 14) 51%,rgb(27, 34, 99) 94%);
+  // background: linear-gradient(to right, rgb(0, 39, 108) 1%,rgba(107,156,196,1) 51%,rgb(114, 129, 148) 94%);
+  // background: linear-gradient(to right, rgb(0, 39, 108) 1%,rgb(158, 14, 14) 51%,rgb(27, 34, 99) 94%);
+}
+.blue{
+  background: linear-gradient(to left, #00276c 1%, #6b9cc4 10%, #728194 78%);
+
+}
+.red{
+  background: linear-gradient(to right, #11064e 5%, #1b2263 9%, #9E0E0D 98%);
+}
+.description{
+  height:$sect-heigh;
+  line-height: 30px;
 }
 section div:nth-child(1){
   float:left;
   width: 50%;
-  height: 345px;
-  background-size: cover;
 }
 section div:nth-child(2){
   float: right;
@@ -73,6 +98,8 @@ section div:nth-child(2){
 }
 section .img{
   float: left;
+  height:100%;
+  background-size: cover;
 }
 section .description{
   width: 50%;
@@ -81,5 +108,5 @@ section .description{
 }
 .description p{
   padding: 10%;
-  padding-top: 0;
+  padding-top: 10%;;
 }
