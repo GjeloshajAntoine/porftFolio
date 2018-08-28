@@ -1,39 +1,112 @@
-nav{
+body {
+  margin: 0px;
+}
+
+nav {
   padding-left: 3%;
   padding-right: 3%;
+  color: gray;
 }
-.initiales{
+
+.initiales {
   display: inline;
 }
-span .nom{
+
+span .nom {
   display: inline-block;
 }
-.nom{
+
+.nom {
   /* display:none; */
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
   width: 0px;
-  transition:width 1s,transform 1.2s;
+  -webkit-transition: width 1s,-webkit-transform 1.2s;
+  transition: width 1s,-webkit-transform 1.2s;
+  transition: width 1s,transform 1.2s;
+  transition: width 1s,transform 1.2s,-webkit-transform 1.2s;
 }
+
 /* .initiales:hover ~ .nom{
   display: inline;
 } */
-.nom-show{
+.nom-show {
   display: inline-block;
-  transform: scale(1,1);
-  transition:width 1s,transform 1.2s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: width 1s,-webkit-transform 1.2s;
+  transition: width 1s,-webkit-transform 1.2s;
+  transition: width 1s,transform 1.2s;
+  transition: width 1s,transform 1.2s,-webkit-transform 1.2s;
   /* transition:  */
-  width:45.328px;
-  width:3em; 
+  width: 45.328px;
+  width: 3em;
 }
-.left-menu{
+
+.left-menu {
   float: left;
   font-family: 'Lilita One', cursive;
   font-size: 2em;
 }
-.left-menu > * ,.nom-complet > *{ /* to delete space between words */
+
+.left-menu > *, .nom-complet > * {
+  /* to delete space between words */
   float: left;
 }
-.right-menu{
+
+.right-menu {
   float: right;
   /* margin-right: 5%; */
 }
+
+section::before {
+  content: ' ';
+  width: 39%;
+  height: 57px;
+  position: absolute;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 68%;
+  margin-left: 29%;
+  margin-top: -44px;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  margin-top: 10%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #00276c), color-stop(51%, #6b9cc4), color-stop(94%, #728194));
+  background: linear-gradient(to right, #00276c 1%, #6b9cc4 51%, #728194 94%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #00276c), color-stop(51%, #9e0e0e), color-stop(94%, #1b2263));
+  background: linear-gradient(to right, #00276c 1%, #9e0e0e 51%, #1b2263 94%);
+}
+
+section div:nth-child(1) {
+  float: left;
+  width: 50%;
+  height: 345px;
+  background-size: cover;
+}
+
+section div:nth-child(2) {
+  float: right;
+  width: 50%;
+}
+
+section .img {
+  float: left;
+}
+
+section .description {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.description p {
+  padding: 10%;
+  padding-top: 0;
+}
+/*# sourceMappingURL=nav.css.map */
