@@ -61,7 +61,6 @@ span .nom {
 }
 
 .profile {
-  width: 90%;
   margin: 0% 5% 0% 5%;
   margin-top: 2em;
 }
@@ -75,9 +74,18 @@ span .nom {
   border-radius: 100%;
 }
 
+.contact {
+  float: left;
+}
+
+.contact ul {
+  list-style: none;
+}
+
 .bio {
-  widows: 50%;
+  width: 50%;
   float: right;
+  text-align: center;
 }
 
 .inclined-left::before, .inclined-right::before {

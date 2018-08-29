@@ -46,7 +46,6 @@ span .nom{
 }
 
 .profile{
-  width:90%;
   margin:0% 5% 0% 5%;
   margin-top:$nav-size;
 }
@@ -58,9 +57,16 @@ span .nom{
   height:350px;
   border-radius: 100%; 
 }
+.contact{
+  float:left;
+  ul{
+    list-style: none;
+  }
+}
 .bio{
-  widows: 50%;
+  width: 50%;
   float: right;
+  text-align:center;
 }
 
 $sect-heigh:345px;
