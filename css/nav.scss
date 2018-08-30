@@ -44,7 +44,13 @@ span .nom{
 }
 .right-menu{
   float: right;
-  /* margin-right: 5%; */
+  text-decoration: underline;
+  span{
+    margin-left: 5px;
+  }
+  .selected{
+    font-weight: bold;
+  }
 }
 
 .profile{
@@ -152,12 +158,12 @@ section .description{
     margin: 0 auto;
   }
   .inclined-left::before,.inclined-right::before{
-    transform:rotateZ(90deg);
+    transform:rotateZ(90deg) scale(1.5);
     // margin-top:22vh;
     clip-path: polygon(50% 80%, 100% 53%, 20% 0, 3% 0, 0 80%);
-    margin-top: 5vh;
-    height: 90vh;
-    width: 5vh;
+    margin-top: 0%;
+    height: 100%;
+    width: 5%;
   }
   section{
     height: 100vh;
