@@ -1,5 +1,5 @@
 $nav-size:2em;
-$back-grey:#f7f7f7;
+$back-grey:#252f3b;
 body{
   margin: 0px;
   background-color:$back-grey;
@@ -36,7 +36,7 @@ span .nom{
 }
 .left-menu{
   float: left;
-  font-family: 'Lilita One', cursive;
+  font-family: 'Lilita One','monospaced';
   font-size: $nav-size;
 }
 .left-menu > * ,.nom-complet > *{ /* to delete space between words */
@@ -56,6 +56,7 @@ span .nom{
 .profile{
   margin:0% 5% 0% 5%;
   margin-top:$nav-size;
+  color:#989898;
 }
 .photo{
   width: 50%;
@@ -72,9 +73,12 @@ span .nom{
   }
 }
 .bio{
-  width: 50%;
+  width: 32%;
   float: right;
-  text-align:center;
+  text-align: center;
+  margin-right: 16%;
+  margin-top: 4%;
+  display: inline-block;
 }
 
 $sect-heigh:345px;
@@ -156,6 +160,8 @@ section .description{
   .bio{
     float: none;
     margin: 0 auto;
+    width: 50%;
+    display: block; //for centering
   }
   .inclined-left::before,.inclined-right::before{
     transform:rotateZ(90deg) scale(1.5);
