@@ -11,6 +11,7 @@ body {
   border-bottom-left-radius: 0;
   margin: 0 auto;
   overflow: hidden;
+  background: linear-gradient(135deg, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
 }
 
 .project .title {
@@ -21,6 +22,7 @@ body {
 
 .text {
   border-radius: 100%;
+  border: 10px solid white;
   width: 74vw;
   height: 81vh;
   min-height: 380px;
