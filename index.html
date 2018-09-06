@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>round</title>
+    <link rel="stylesheet" href="./css/round.css">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <link rel="stylesheet" href="./css/nav.css">
-    <link href="https://fonts.googleapis.com/css?family=Lilita+One|PT+Sans|PT+Sans+Caption" rel="stylesheet">
-
-  </head>
-  <body>
-    <nav>
-      <div class="left-menu">
-        <span class="prenom">Antoine &#160;</span>
-        <span class="nom-complet">
-          <span class="initiales">G</span>
-          <span class="">
-            <div class="nom">
-                jelosha
-            </div>
-          </span>
-          <span class="initiales">j</span>      
-        </span>
-      </div>
-      <div class="right-menu">
-        <span class="selected">Portfolio</span>
-        <a href="./cv.html">CV</a>
-      </div>
-    </nav>
+</head>
+<body>
+  <div class="project">
     <div class="profile">
       <div class="contact">
         <div class="photo"></div>
@@ -62,38 +45,34 @@
           </p>
           
         </p>
+        </div>
       </div>
+    </div>    
+  </div>
+  <div class="project">
+    <span class="title">Improvoc</span>
+    <div class="text">
+      <p>
+          Un petit site web pour le cercle d'improvisation de l'ulb,essentielment 
+          en html/css avec un peu de js et de php.
+          L'hergement existant ne disposant plus de base de donnée disponible,
+          j'ai estimé que le cms statique grav sera largrement suffisant pour 
+          les besoin du cercle.    
+      </p>
     </div>
-    <main>
-      <section class="inclined-left">
-        <div class="img" style="background-image: url('./img/Capture_impro.PNG');">
-          <!-- <img src="./img/Homepage.jpg" alt=""> -->
-        </div>
-        <div class="description red">
-          <h2>Site le l'improvocation</h2>
-          <p>
-            Un petit site web pour le cercle d'improvisation de l'ulb,essentielment 
-            en html/css avec un peu de js et de php.
-            L'hergement existant ne disposant plus de base de donnée disponible,
-            j'ai estimé que le cms statique grav sera largrement suffisant pour 
-            les besoin du cercle.
-          </p>
-        </div>
-      </section>
-      <section class="inclined-right">
-        <div class="description blue">
-          <h2>4wings</h2>
-          <p>
-            Le projet 4wings était un exercie à becode
-             consitant en un cms pour site multilingue.
-            Chargé du backend ,j'ai du designé la base de donnnée (mysql) 
-            et conciderer les l'achitecture à adopter .
-          </p>
-        </div>
-        <div class="img" style="background-image:url('./img/Homepage.jpg');">
-        </div>
-      </section>      
-    </main>
-    <script src="./js/animation.js"></script>
-  </body>
+    <div class="image" style="background-image: url(./img/Capture_impro.PNG)"></div>
+  </div>
+  <div class="project">
+    <span class="title">4 wings</span>
+    <div class="text">
+      <p>
+          Le projet 4wings était un exercie à becode
+          consitant en un cms pour site multilingue.
+         Chargé du backend ,j'ai du designé la base de donnnée (mysql) 
+         et considérer les l'achitecture à adopter .
+   </p>
+    </div>
+    <div class="image" style="background-image:url(./img/Homepage.jpg);" ></div>
+  </div>  
+</body>
 </html>
