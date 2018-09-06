@@ -1,0 +1,81 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Aldrich';
+}
+
+.project {
+  width: 90vw;
+  height: 100vh;
+  border-radius: 90px;
+  border-bottom-left-radius: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.project .title {
+  display: inline-block;
+  font-size: 4em;
+  margin-left: 1em;
+}
+
+.text {
+  border-radius: 100%;
+  width: 74vw;
+  height: 81vh;
+  min-height: 380px;
+  margin: -29vh -40vh 0 0;
+  float: right;
+  background-color: black;
+}
+
+.text p {
+  color: white;
+  margin: 45vh 31vw 0vh 20vh;
+  text-align: center;
+  line-height: 30px;
+}
+
+.image {
+  border-radius: 100%;
+  width: 80vw;
+  height: 100vh;
+  margin: 41vh 0 0 -25vw;
+  background-size: contain;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    margin: 0px;
+  }
+  .project {
+    margin: 0px;
+    width: 100vw;
+    border-top-left-radius: 0px;
+  }
+  .project .title {
+    font-size: 2em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+  }
+  .text {
+    width: 84vw;
+    height: 50vh;
+    min-height: 0;
+    margin: -5vh -6vh 0 0px;
+  }
+  .text p {
+    margin: 6vh 20vw 0vh 10vh;
+    line-height: normal;
+  }
+  .image {
+    border-radius: 100%;
+    width: 75vw;
+    height: 40vh;
+    margin: 57vh 0 0 -25vw;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=round.css.map */
