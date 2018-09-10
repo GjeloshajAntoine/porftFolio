@@ -20,7 +20,7 @@ body {
   margin-left: 1em;
 }
 
-.text {
+.text-round {
   border-radius: 100%;
   border: 10px solid white;
   width: 74vw;
@@ -31,11 +31,14 @@ body {
   background-color: black;
 }
 
-.text p {
+p.round {
   color: white;
-  margin: 45vh 31vw 0vh 20vh;
   text-align: center;
-  line-height: 30px;
+  line-height: 25px;
+  position: absolute;
+  right: 14%;
+  max-width: 28%;
+  margin-top: 0%;
 }
 
 .image {
@@ -62,15 +65,16 @@ body {
     width: fit-content;
     display: inline-block;
   }
-  .text {
+  .text-round {
     width: 84vw;
     height: 50vh;
     min-height: 0;
-    margin: -5vh -6vh 0 0px;
   }
-  .text p {
-    margin: 6vh 20vw 0vh 10vh;
+  p.round {
     line-height: normal;
+    right: 14%;
+    max-width: 40%;
+    margin-top: 6%;
   }
   .image {
     border-radius: 100%;

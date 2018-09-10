@@ -15,7 +15,7 @@ body
       display: inline-block
       font-size: 4em
       margin-left: 1em
-.text
+.text-round
     border-radius: 100%
     border: 10px solid white
     width: 74vw
@@ -24,11 +24,16 @@ body
     margin: -29vh -40vh 0 0
     float: right
     background-color: black
-    p
-        color: white
-        margin: 45vh 31vw 0vh 20vh
-        text-align: center
-        line-height: 30px
+p.round
+    color: white
+    //margin: 45vh 31vw 0vh 20vh
+    text-align: center
+    line-height: 25px
+    position: absolute
+    right: 14%
+    max-width: 28%
+    margin-top: 0%
+
 .image
     border-radius: 100%
     width: 80vw
@@ -47,14 +52,18 @@ body
             font-size: 2em
             width: fit-content
             display: inline-block
-    .text
+    .text-round
         width: 84vw //adapt proportion
         height: 50vh
         min-height: 0
-        margin: -5vh -6vh 0 0px
-        p
-            margin: 6vh 20vw 0vh 10vh
-            line-height: normal
+        //margin: -5vh -6vh 0 0px
+
+    p.round
+        //margin: 6vh 20vw 0vh 10vh
+        line-height: normal
+        right: 14%;
+        max-width: 40%;
+        margin-top: 6%;
     .image
         border-radius: 100%
         width: 75vw
