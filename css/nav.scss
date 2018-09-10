@@ -9,7 +9,13 @@ nav{
   padding-left: 3%;
   padding-right: 3%;
   color: gray;
-  height:$nav-size;
+  height:$nav-size+0.4;
+  background-color: #f6f6f6;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 84%;
+  margin: 0 auto;
+  margin-bottom: 1%;
 }
 .initiales{
   display: inline;
