@@ -69,6 +69,7 @@ p.round {
     width: 84vw;
     height: 50vh;
     min-height: 0;
+    margin: -5vh -6vh 0 0px;
   }
   p.round {
     line-height: normal;
