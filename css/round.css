@@ -78,9 +78,9 @@ p.round {
   }
   .text-round {
     width: 84vw;
-    height: 50vh;
+    height: 60vh;
     min-height: 0;
-    margin: -5vh -6vh 0 0px;
+    margin: -5vh -15vh 0 0px;
   }
   p.round {
     line-height: normal;
@@ -91,7 +91,7 @@ p.round {
   .image {
     border-radius: 100%;
     width: 75vw;
-    height: 60vh;
+    height: 40vh;
     margin: 57vh 0 0 -25vw;
     background-size: cover;
   }
