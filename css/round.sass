@@ -1,7 +1,20 @@
+$greygrad: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)
+
 body
     width: 100vw
     overflow-x: hidden
     font-family: 'Aldrich'
+.profile-block
+    background: $greygrad    
+    width: 90vw
+    border-radius: 90px
+    border-bottom-left-radius: 8px
+    border-top-right-radius: 8px
+    margin: 0 auto 2%
+    display: block
+    overflow: auto
+
+
 .project
     width: 90vw
     height: 100vh
@@ -9,8 +22,7 @@ body
     border-bottom-left-radius: 0
     margin: 0 auto
     overflow: hidden
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)
-    linear-gradient(135deg, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%)
+    background: $greygrad
     .title
       display: inline-block
       font-size: 4em
