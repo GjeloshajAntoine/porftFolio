@@ -64,6 +64,10 @@ p.round {
   body {
     margin: 0px;
   }
+  nav {
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+  }
   .project {
     margin: 0px;
     width: 100vw;
@@ -84,8 +88,8 @@ p.round {
   }
   p.round {
     line-height: normal;
-    right: 14%;
-    max-width: 40%;
+    right: 7%;
+    max-width: 38%;
     margin-top: 6%;
   }
   .image {
