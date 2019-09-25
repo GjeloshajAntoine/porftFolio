@@ -69,9 +69,8 @@ p.round {
     border-bottom-right-radius: 27px;
   }
   .project {
-    margin: 0px;
-    width: 100vw;
     border-top-left-radius: 0px;
+    margin-bottom: 5vh;
   }
   .project .title {
     font-size: 2em;
@@ -81,8 +80,8 @@ p.round {
     display: inline-block;
   }
   .text-round {
-    width: 84vw;
-    height: 60vh;
+    width: 81vw;
+    height: 44vh;
     min-height: 0;
     margin: -5vh -15vh 0 0px;
   }
