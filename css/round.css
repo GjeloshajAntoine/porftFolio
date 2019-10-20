@@ -17,10 +17,10 @@ body {
 
 .project {
   width: 90vw;
-  height: 100vh;
+  height: 60vh;
   border-radius: 90px;
-  border-bottom-left-radius: 0;
-  margin: 0 auto;
+  border-bottom-left-radius: 90px;
+  margin: 0 auto 10px;
   overflow: hidden;
   background: linear-gradient(135deg, white 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
 }
@@ -34,10 +34,10 @@ body {
 .text-round {
   border-radius: 100%;
   border: 10px solid white;
-  width: 74vw;
-  height: 81vh;
+  width: 70vw;
+  height: 66vh;
   min-height: 380px;
-  margin: -29vh -40vh 0 0;
+  margin: -41vh -25vh 0 0;
   float: right;
   background-color: black;
 }
@@ -47,16 +47,16 @@ p.round {
   text-align: center;
   line-height: 25px;
   position: absolute;
-  right: 14%;
-  max-width: 28%;
-  margin-top: 0%;
+  right: 12%;
+  max-width: 29%;
+  margin-top: -3%;
 }
 
 .image {
   border-radius: 100%;
   width: 80vw;
   height: 100vh;
-  margin: 41vh 0 0 -25vw;
+  margin: 20vh 0 0 -25vw;
   background-size: contain;
 }
 
